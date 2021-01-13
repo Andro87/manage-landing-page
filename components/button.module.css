@@ -1,0 +1,45 @@
+.button {
+    border: 1px solid blue;
+    padding: 15px 25px;
+    border-radius: 30px;
+    text-align: center;
+    cursor: pointer;
+    border: none;
+    outline: none;
+
+    font-size: 0.8rem;
+    width: 150px;
+    max-width: 200px;
+    max-height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "vietnam";
+    font-weight: 700;
+}
+.white {
+    color: var(--BrightRed);
+    background-color: var(--VaryLightGray);
+    margin-top: 38px;
+    margin-bottom: 60px;
+}
+
+.orange {
+    background-color: var(--BrightRed);
+    color: var(--VaryLightGray);
+    /*margin*/
+}
+.button:hover {
+    opacity: 0.7;
+}
+@media only screen and (max-width: 850px) {
+    .button {
+        margin: auto;
+    }
+
+    .white {
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

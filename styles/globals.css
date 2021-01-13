@@ -1,16 +1,86 @@
-html,
-body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "vietnam";
+    src: url("../public/fonts/BeVietnam-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "vietnam";
+    src: url("../public/fonts/BeVietnam-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "vietnam";
+    src: url("../public/fonts/BeVietnam-Regular.ttf");
+    font-weight: 400;
+}
+
+:root {
+    /*Primary*/
+
+    --BrightRed: hsl(12, 88%, 59%);
+    --DarkBlue: hsl(228, 39%, 23%);
+
+    /* Neutral*/
+
+    --DarkGrayishBlue: hsl(227, 12%, 61%);
+    --VeryDarkBlue: hsl(233, 12%, 13%);
+    --VeryPaleRed: hsl(13, 100%, 96%);
+    --VaryLightGray: hsl(0, 0%, 98%);
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: "vietnam";
+    color: var(--DarkGrayishBlue);
+    font-size: 1rem;
+    background: url("../public/images/bg-tablet-pattern.svg") 135% -10%;
+    background-repeat: no-repeat;
+    position: relative;
+    z-index: 2;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: var(--DarkBlue);
+}
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-family: "vietnam";
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+h4 {
+    margin-bottom: 15px;
+}
+
+p {
+    line-height: 150%;
+}
+
+@media only screen and (max-width: 480px) {
+    body {
+        background: url("../public/images/bg-tablet-pattern.svg") 100px -2%;
+        background-size: contain;
+        background-repeat: no-repeat;
+        position: relative;
+        border: 1px solidi maroon;
+    }
 }
