@@ -34,7 +34,7 @@ export default function Home() {
 
                     <button
                         type="button"
-                        name="button"
+                        title="button"
                         onClick={() => setOpen(!open)}
                         className={styles.hamburger}
                     >
@@ -92,7 +92,7 @@ export default function Home() {
                 </div>
             </header>
 
-            <section className={styles.info}>
+            <div className={styles.info}>
                 <div className={styles.col1}>
                     <div className={styles.box}>
                         <h2>What’s different about Manage?</h2>
@@ -136,9 +136,9 @@ export default function Home() {
                         team productivity solution.
                     </p>
                 </div>
-            </section>
+            </div>
 
-            <section className={styles.box_slide}>
+            <div className={styles.box_slide}>
                 <h2>What they’ve said</h2>
 
                 <div className={styles.viewportCss} ref={emblaRef}>
@@ -235,14 +235,14 @@ export default function Home() {
                 </div>
 
                 <Button colour="orange" />
-            </section>
+            </div>
 
-            <section className={styles.simplify}>
+            <div className={styles.simplify}>
                 <div className={styles.simplify_box}>
                     <p>Simplify how your team works today.</p>
                     <Button colour="white" />
                 </div>
-            </section>
+            </div>
 
             <footer className={styles.footer}>
                 <div className={styles.footer_wrap}>
@@ -348,12 +348,16 @@ export default function Home() {
                         >
                             <input
                                 type="email"
-                                name="email"
+                                title="email"
                                 ref={email}
                                 placeholder=" Updates in your inbox…"
                                 className={styles.email}
                             />
-                            <button type="submit" className={styles.go}>
+                            <button
+                                type="submit"
+                                className={styles.go}
+                                title="button"
+                            >
                                 Go
                             </button>
                         </form>
